@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <h1>📚 Management Systems - Project Repository</h1>
-
 </head>
 <body>
 
