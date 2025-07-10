@@ -3,29 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Account Registration and Login System - README</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        code {
-            background-color: #eee;
-            padding: 2px 6px;
-            border-radius: 4px;
-        }
-        .section {
-            background: white;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-    </style>
+
 </head>
 <body>
 
@@ -87,14 +65,6 @@
             <li>Select options from the menu to register or log in.</li>
         </ol>
   </div>
-
-  <div class="section">
-      <h2>📌 Example Data Format (in data.txt)</h2>
-      <pre>
-john123,password123,john@email.com
-janeDoe,securePass,jane@domain.com
-        </pre>
-    </div>
 
 </body>
 </html>
