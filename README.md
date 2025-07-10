@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Account Registration and Login System - README</title>
-
 </head>
 <body>
 
