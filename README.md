@@ -16,4 +16,12 @@
   <p><strong>2. Library Management System</strong>: A more advanced system using object-oriented programming and STL containers. It includes book and user management, borrowing/returning workflows, request queues, and robust file-based data persistence (<code>books.txt</code> and <code>users.txt</code>). It demonstrates modular class design and clean menu-based interaction.</p>
 
   <h2>🌿 Repository Structure</h2>
-    <p>Each <code>git branch</code> represents a standalone project. This approach keeps projects organized and avoids
+p>
+      Each branch in this repository represents a separate project to keep codebases modular and organized. For example, one branch holds the login/register system, while another holds the library system.
+    </p>
+    <p>
+      Moving forward, I plan to expand this repository by “dumping” or developing any type of management-related systems—such as inventory, student tracking, scheduling apps, and more—within isolated branches for clarity and scalability.
+    </p>
+  </div>
+</body>
+</html>
