@@ -7,7 +7,7 @@
 <body>
   <h3>**Project is a work in progress!**</h3>
   <h1>📘 Library Management System</h1>
-  <p><strong>CSCE 1045 – Project 2</strong><br>Due: July 17, 2025</p>
+
 
   <div class="section">
     <h2>📄 Overview</h2>
