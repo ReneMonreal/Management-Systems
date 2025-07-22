@@ -266,7 +266,7 @@ int main(){
             } catch(invalid_argument& excpt){
                     cout<<excpt.what()<< endl;
                     cin.clear();
-                    cin.ignore(numeric_limits<streamsize>:: max(), '\n\);
+                    cin.ignore(numeric_limits<streamsize>:: max(), '\n');
                     choice = 0;
             }        
             if((choice >= 1) ||(choice <= 10)){
