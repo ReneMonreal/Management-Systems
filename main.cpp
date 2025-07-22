@@ -253,30 +253,26 @@ int main(){
 
         while (true){
             cout << "Enter your choice (1 ,2 , 3... 10): ";
-            try{
-                cin>>choice;
-                if(cin.peek() != '\n'{
+            try {
+                cin >> choice;
+                if (cin.peek() != '\n') {
                     throw invalid_argument("Non-Integer Value");
-            } catch(ios::failure& excpt){
-                    cout<<"Non-integer Value. Please enter a number. " << endl;
-                    cout<<excpt.what() <<endl;
-                    cin.clear();
-                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                    choice = 0;
-            } catch(invalid_argument& excpt){
-                    cout<<excpt.what()<< endl;
-                    cin.clear();
-                    cin.ignore(numeric_limits<streamsize>:: max(), '\n');
-                    choice = 0;
-            }        
-            if((choice >= 1) ||(choice <= 10)){
-                break;
-            }
-            else{
-                cout<< "Invalid Input Try Again, Enter a number...\n";
+                }
+            } catch (ios::failure& excpt) {
+                cout << "Non-integer Value. Please enter a number. " << endl;
+                cout << excpt.what() << endl;
                 cin.clear();
-                cin.ignore(1000, '\n');
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                choice = 0;
+            } catch (invalid_argument& excpt) {
+                cout << excpt.what() << endl;
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                choice = 0;
             }
+            if ((choice >= 1) && (choice <= 10)) { // Use && instead of ||
+                break;
+            } 
         }
 
         switch (choice) {
@@ -538,9 +534,6 @@ int main(){
                 for(it = UserBorrowedBooks.begin();it != UserBorrowedBooks.end(); ++it){
                     libary1.PrintSearchReturnBookInfo(*it);
                 }
-
-                
-
 
                 break;
             }
