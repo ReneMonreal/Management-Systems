@@ -4,6 +4,8 @@
 #include <vector>
 #include <fstream>
 #include <list>
+#include <limits>
+#include <stdexcept>
 
 using namespace std;
 
@@ -209,7 +211,7 @@ bool compareByTitle(const book& a, const book& b){
 
         
 int main(){
-    int choice;
+    int choice = 0;
     //case 1
     bool bookFoundInDatabase = false, globalAvlibility = true; //assume not found. assume avliable
     string bookname, authorname, ISBN;
@@ -251,7 +253,22 @@ int main(){
 
         while (true){
             cout << "Enter your choice (1 ,2 , 3... 10): ";
-            cin>>choice;
+            try{
+                cin>>choice;
+                if(cin.peek() != '\n'{
+                    throw invalid_argument("Non-Integer Value");
+            } catch(ios::failure& excpt){
+                    cout<<"Non-integer Value. Please enter a number. " << endl;
+                    cout<<excpt.what() <<endl;
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                    choice = 0;
+            } catch(invalid_argument& excpt){
+                    cout<<excpt.what()<< endl;
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>:: max(), '\n\);
+                    choice = 0;
+            }        
             if((choice >= 1) ||(choice <= 10)){
                 break;
             }
