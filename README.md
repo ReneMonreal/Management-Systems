@@ -5,7 +5,6 @@
 
 </head>
 <body>
-  <h3>**Project is a work in progress!**</h3>
   <h1>📘 Library Management System</h1>
 
 
